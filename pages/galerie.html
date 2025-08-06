@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Club de Badminton</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shuttle-space"></i>
+                <a href="../index.html" style="color: inherit; text-decoration: none;">Club Badminton</a>
+            </div>
+            
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Le Club <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="equipe.html">Notre Équipe</a></li>
+                        <li><a href="histoire.html">Histoire</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Activités <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="entrainements.html">Entraînements</a></li>
+                        <li><a href="competitions.html">Compétitions</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="galerie.html" class="nav-link">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);">
+        <div class="hero-content" style="grid-template-columns: 1fr; text-align: center; color: white;">
+            <div>
+                <h1>Galerie Photos</h1>
+                <p>Découvrez la vie de notre club à travers nos plus beaux moments</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtres de galerie -->
+    <section style="padding: 60px 0 0; background-color: var(--light-gray);">
+        <div class="container">
+            <div class="gallery-filters" style="text-align: center; margin-bottom: 40px;">
+                <button class="filter-btn active" onclick="filterGallery('all')" style="margin: 5px; padding: 10px 20px; border: 2px solid var(--primary-color); background: var(--primary-color); color: white; border-radius: var(--border-radius); cursor: pointer; transition: var(--transition);">Toutes</button>
+                <button class="filter-btn" onclick="filterGallery('entrainements')" style="margin: 5px; padding: 10px 20px; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); border-radius: var(--border-radius); cursor: pointer; transition: var(--transition);">Entraînements</button>
+                <button class="filter-btn" onclick="filterGallery('competitions')" style="margin: 5px; padding: 10px 20px; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); border-radius: var(--border-radius); cursor: pointer; transition: var(--transition);">Compétitions</button>
+                <button class="filter-btn" onclick="filterGallery('events')" style="margin: 5px; padding: 10px 20px; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); border-radius: var(--border-radius); cursor: pointer; transition: var(--transition);">Événements</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie principale -->
+    <section class="gallery" style="padding-top: 20px;">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Entraînements -->
+                <div class="gallery-item animate-on-scroll" data-category="entrainements" data-delay="0">
+                    <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=400&h=300&fit=crop&auto=format" alt="Entraînement technique" />
+                    <div class="gallery-overlay">
+                        <h4>Entraînement Technique</h4>
+                        <p>Perfectionnement des gestes de base</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-on-scroll" data-category="entrainements" data-delay="100">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&auto=format" alt="Séance collective" />
+                    <div class="gallery-overlay">
+                        <h4>Séance Collective</h4>
+                        <p>Entraînement en groupe</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-on-scroll" data-category="entrainements" data-delay="200">
+                    <img src="https://images.unsplash.com/photo-1552667466-07770ae110d0?w=400&h=300&fit=crop&auto=format" alt="Coaching individuel" />
+                    <div class="gallery-overlay">
+                        <h4>Coaching Individuel</h4>
+                        <p>Accompagnement personnalisé</p>
+                    </div>
+                </div>
+
+                <!-- Compétitions -->
+                <div class="gallery-item animate-on-scroll" data-category="competitions" data-delay="300">
+                    <img src="https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?w=400&h=300&fit=crop&auto=format" alt="Tournoi régional" />
+                    <div class="gallery-overlay">
+                        <h4>Tournoi Régional</h4>
+                        <p>Compétition inter-clubs</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item animate-on-scroll" data-category="competitions" data-delay="400">
+                    <img src="https://images.unsplash.com/photo-1594736797933-d0710ba43866?w=400&h=300&fit=crop&auto=format" alt="Championnat départemental" />
+                    <div class="gallery-overlay">
+                        <h4>Championnat Départemental</h4>
+                        <p>Nos joueurs en action</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="competitions">
+                    <img src="../images/competition3.jpg" alt="Remise des prix" />
+                    <div class="gallery-overlay">
+                        <h4>Remise des Prix</h4>
+                        <p>Célébration des victoires</p>
+                    </div>
+                </div>
+
+                <!-- Événements -->
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop&auto=format" alt="Assemblée générale" />
+                    <div class="gallery-overlay">
+                        <h4>Assemblée Générale</h4>
+                        <p>Rencontre annuelle des membres</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=300&fit=crop&auto=format" alt="Soirée de gala" />
+                    <div class="gallery-overlay">
+                        <h4>Soirée de Gala</h4>
+                        <p>Célébration de fin de saison</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=300&fit=crop&auto=format" alt="Stage de perfectionnement" />
+                    <div class="gallery-overlay">
+                        <h4>Stage de Perfectionnement</h4>
+                        <p>Formation intensive</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="entrainements">
+                    <img src="https://images.unsplash.com/photo-1566351682001-8ac2d1dfe1a3?w=400&h=300&fit=crop&auto=format" alt="Échauffement collectif" />
+                    <div class="gallery-overlay">
+                        <h4>Échauffement Collectif</h4>
+                        <p>Préparation physique</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="competitions">
+                    <img src="../images/competition4.jpg" alt="Match en double" />
+                    <div class="gallery-overlay">
+                        <h4>Match en Double</h4>
+                        <p>Compétition de haut niveau</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="../images/event4.jpg" alt="Journée portes ouvertes" />
+                    <div class="gallery-overlay">
+                        <h4>Journée Portes Ouvertes</h4>
+                        <p>Découverte du badminton</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="entrainements">
+                    <img src="../images/training5.jpg" alt="Entraînement junior" />
+                    <div class="gallery-overlay">
+                        <h4>Entraînement Junior</h4>
+                        <p>Formation des jeunes talents</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="competitions">
+                    <img src="../images/competition5.jpg" alt="Finale départementale" />
+                    <div class="gallery-overlay">
+                        <h4>Finale Départementale</h4>
+                        <p>Match décisif</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="../images/event5.jpg" alt="Barbecue du club" />
+                    <div class="gallery-overlay">
+                        <h4>Barbecue du Club</h4>
+                        <p>Moment convivial</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="entrainements">
+                    <img src="../images/training6.jpg" alt="Perfectionnement tactique" />
+                    <div class="gallery-overlay">
+                        <h4>Perfectionnement Tactique</h4>
+                        <p>Analyse de jeu</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 40px;">
+                <p style="color: var(--gray); font-style: italic;">Cliquez sur une image pour l'agrandir</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section informative -->
+    <section style="padding: 80px 0; background-color: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Partagez Vos Photos</h2>
+                <p>Vous avez des photos du club ? Partagez-les avec nous !</p>
+            </div>
+            
+            <div style="text-align: center; background-color: var(--light-gray); padding: 40px; border-radius: var(--border-radius);">
+                <i class="fas fa-camera" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                <h3 style="margin-bottom: 20px;">Contribuez à Notre Galerie</h3>
+                <p style="margin-bottom: 30px; color: var(--gray);">
+                    Vous avez participé à un événement du club ? Vous avez pris de belles photos lors d'un entraînement ou d'une compétition ? 
+                    N'hésitez pas à nous les envoyer pour enrichir notre galerie !
+                </p>
+                <a href="../index.html#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Envoyer vos photos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Club de Badminton</h4>
+                    <p>Votre club de badminton depuis plus de 20 ans. Rejoignez-nous pour découvrir ce sport passionnant dans une ambiance conviviale.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="entrainements.html">Entraînements</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>123 Avenue du Sport<br>75000 Paris</p>
+                    <p>Tél: 01 23 45 67 89</p>
+                    <p>Email: contact@clubbadminton.fr</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Club de Badminton. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Fonction de filtrage de la galerie
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Mettre à jour les boutons
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.background = 'transparent';
+                btn.style.color = 'var(--primary-color)';
+            });
+            
+            event.target.classList.add('active');
+            event.target.style.background = 'var(--primary-color)';
+            event.target.style.color = 'white';
+            
+            // Filtrer les éléments
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 100);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.8)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+        
+        // Appliquer les styles de transition aux éléments de la galerie
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            });
+        });
+    </script>
+</body>
+</html>

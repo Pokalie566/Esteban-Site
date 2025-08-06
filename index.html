@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Badminton - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shuttle-space"></i>
+                <span>Club Badminton</span>
+            </div>
+            
+            <!-- Menu burger pour mobile -->
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <!-- Menu principal -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#accueil" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Le Club <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/presentation.html">Présentation</a></li>
+                        <li><a href="pages/equipe.html">Notre Équipe</a></li>
+                        <li><a href="pages/histoire.html">Histoire</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Activités <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/entrainements.html">Entraînements</a></li>
+                        <li><a href="pages/competitions.html">Compétitions</a></li>
+                        <li><a href="pages/stages.html">Stages</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/galerie.html" class="nav-link">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bannière principale -->
+    <section class="hero" id="accueil" data-parallax>
+        <div class="hero-content">
+            <div>
+                <h1 class="typing-effect">Bienvenue au Club de Badminton</h1>
+                <p>Découvrez la passion du badminton dans une ambiance conviviale et sportive</p>
+                <a href="#presentation" class="btn btn-primary">Découvrir le club</a>
+            </div>
+            <div class="hero-image">
+                <!-- Image de placeholder - à remplacer par une vraie photo -->
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop&auto=format" alt="Joueurs de badminton" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Section présentation -->
+    <section class="presentation" id="presentation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Club</h2>
+                <p>Un club dynamique et accueillant pour tous les niveaux</p>
+            </div>
+            
+            <div class="info-blocks">
+                <div class="info-block animate-on-scroll" data-delay="0">
+                    <div class="info-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Présentation du Club</h3>
+                    <p>Notre club de badminton existe depuis plus de 20 ans et accueille des joueurs de tous niveaux, des débutants aux compétiteurs confirmés. Dans une ambiance conviviale, venez découvrir ou perfectionner votre technique.</p>
+                </div>
+                
+                <div class="info-block animate-on-scroll" data-delay="100">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horaires d'Entraînement</h3>
+                    <p><strong>Lundi :</strong> 19h - 22h<br>
+                       <strong>Mercredi :</strong> 18h - 21h<br>
+                       <strong>Vendredi :</strong> 19h - 22h<br>
+                       <strong>Samedi :</strong> 14h - 18h</p>
+                </div>
+                
+                <div class="info-block animate-on-scroll" data-delay="200">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Lieu des Entraînements</h3>
+                    <p>Gymnase Municipal<br>
+                       123 Avenue du Sport<br>
+                       75000 Paris<br>
+                       <em>Parking gratuit disponible</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie d'images -->
+    <section class="gallery" id="galerie">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galerie Photos</h2>
+                <p>Découvrez la vie de notre club en images</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item animate-on-scroll" data-delay="0">
+                    <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=400&h=300&fit=crop&auto=format" alt="Entraînement" />
+                    <div class="gallery-overlay">
+                        <h4>Entraînements</h4>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-delay="100">
+                    <img src="https://images.unsplash.com/photo-1552667466-07770ae110d0?w=400&h=300&fit=crop&auto=format" alt="Compétition" />
+                    <div class="gallery-overlay">
+                        <h4>Compétitions</h4>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-delay="200">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&auto=format" alt="Équipe" />
+                    <div class="gallery-overlay">
+                        <h4>Notre Équipe</h4>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-delay="300">
+                    <img src="https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?w=400&h=300&fit=crop&auto=format" alt="Tournoi" />
+                    <div class="gallery-overlay">
+                        <h4>Tournois</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="pages/galerie.html" class="btn btn-secondary">Voir toutes les photos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-Nous</h2>
+                <p>Une question ? N'hésitez pas à nous contacter</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll" data-delay="0">
+                    <h3>Informations de Contact</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@clubbadminton.fr</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>01 23 45 67 89</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Avenue du Sport, 75000 Paris</span>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Suivez-nous</h4>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form animate-on-scroll" id="contact-form" data-delay="100">
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Club de Badminton</h4>
+                    <p>Votre club de badminton depuis plus de 20 ans. Rejoignez-nous pour découvrir ce sport passionnant dans une ambiance conviviale.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="pages/presentation.html">Présentation</a></li>
+                        <li><a href="pages/entrainements.html">Entraînements</a></li>
+                        <li><a href="pages/galerie.html">Galerie</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>123 Avenue du Sport<br>75000 Paris</p>
+                    <p>Tél: 01 23 45 67 89</p>
+                    <p>Email: contact@clubbadminton.fr</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Club de Badminton. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

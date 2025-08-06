@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stages - Club de Badminton</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shuttle-space"></i>
+                <a href="../index.html" style="color: inherit; text-decoration: none;">Club Badminton</a>
+            </div>
+            
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Accueil</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Le Club <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="equipe.html">Notre Équipe</a></li>
+                        <li><a href="histoire.html">Histoire</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Activités <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="entrainements.html">Entraînements</a></li>
+                        <li><a href="competitions.html">Compétitions</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section class="hero" id="accueil" data-parallax>
+        <div class="hero-content">
+            <div>
+                <h1 class="typing-effect">Stages de Perfectionnement</h1>
+                <p>Progressez rapidement avec nos stages intensifs</p>
+                <a href="#stages" class="btn btn-primary">Nos stages</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1594736797933-d0710ba43866?w=600&h=400&fit=crop&auto=format" alt="Stages de badminton" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenu principal -->
+    <section class="presentation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Stages</h2>
+                <p>Des formations intensives pour tous les niveaux</p>
+            </div>
+
+            <div class="info-blocks">
+                <div class="info-block">
+                    <div class="info-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Stages d'Été</h3>
+                    <p>Stages intensifs pendant les vacances scolaires. Technique, tactique et préparation physique.</p>
+                </div>
+
+                <div class="info-block">
+                    <div class="info-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>Stages d'Hiver</h3>
+                    <p>Perfectionnement technique pendant les congés d'hiver. Idéal pour préparer la fin de saison.</p>
+                </div>
+
+                <div class="info-block">
+                    <div class="info-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Stages Spécialisés</h3>
+                    <p>Stages thématiques : service, défense, jeu en double. Avec des intervenants experts.</p>
+                </div>
+            </div>
+
+            <!-- Prochains stages -->
+            <div style="margin-top: 80px;">
+                <h3 style="text-align: center; font-size: 2rem; margin-bottom: 40px; color: var(--primary-color);">Prochains Stages</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+                    <div style="background-color: var(--light-gray); padding: 30px; border-radius: var(--border-radius); border-top: 4px solid var(--primary-color);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">Stage Perfectionnement Technique</h4>
+                        <div style="margin-bottom: 20px;">
+                            <p><strong>Dates :</strong> 24-25 Février 2025</p>
+                            <p><strong>Horaires :</strong> 9h-12h et 14h-17h</p>
+                            <p><strong>Public :</strong> Joueurs confirmés</p>
+                            <p><strong>Tarif :</strong> 80€ (60€ adhérents)</p>
+                        </div>
+                        <p style="color: var(--gray); margin-bottom: 20px;">
+                            Perfectionnement des coups techniques, travail de la précision et de la vitesse d'exécution.
+                        </p>
+                        <a href="../index.html#contact" class="btn btn-secondary" style="width: 100%; text-align: center;">S'inscrire</a>
+                    </div>
+
+                    <div style="background-color: var(--light-gray); padding: 30px; border-radius: var(--border-radius); border-top: 4px solid var(--accent-color);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">Stage Jeunes Vacances</h4>
+                        <div style="margin-bottom: 20px;">
+                            <p><strong>Dates :</strong> 3-7 Mars 2025</p>
+                            <p><strong>Horaires :</strong> 10h-12h et 14h-16h</p>
+                            <p><strong>Public :</strong> 8-16 ans</p>
+                            <p><strong>Tarif :</strong> 120€ (100€ adhérents)</p>
+                        </div>
+                        <p style="color: var(--gray); margin-bottom: 20px;">
+                            Stage sur 5 jours avec apprentissage ludique, jeux et mini-tournois.
+                        </p>
+                        <a href="../index.html#contact" class="btn btn-secondary" style="width: 100%; text-align: center;">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Club de Badminton</h4>
+                    <p>Votre club de badminton depuis plus de 20 ans.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>123 Avenue du Sport<br>75000 Paris<br>Tél: 01 23 45 67 89</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Club de Badminton. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

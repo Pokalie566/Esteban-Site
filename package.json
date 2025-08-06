@@ -1,0 +1,33 @@
+{
+  "name": "club-badminton-website",
+  "version": "1.0.0",
+  "description": "Site web moderne pour club de badminton",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Ouvrez index.html dans votre navigateur ou utilisez Live Server'",
+    "serve": "echo 'Utilisez un serveur local comme Live Server, http-server, ou Python -m http.server'"
+  },
+  "keywords": [
+    "badminton",
+    "club",
+    "sport",
+    "website",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Club de Badminton",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/votre-compte/club-badminton"
+  },
+  "homepage": ".",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

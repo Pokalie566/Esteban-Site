@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entraînements - Club de Badminton</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shuttle-space"></i>
+                <a href="../index.html" style="color: inherit; text-decoration: none;">Club Badminton</a>
+            </div>
+            
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Le Club <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="equipe.html">Notre Équipe</a></li>
+                        <li><a href="histoire.html">Histoire</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Activités <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="entrainements.html">Entraînements</a></li>
+                        <li><a href="competitions.html">Compétitions</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="galerie.html" class="nav-link">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil" data-parallax>
+        <div class="hero-content">
+            <div>
+                <h1 class="typing-effect">Nos Entraînements</h1>
+                <p>Des sessions adaptées à tous les niveaux pour progresser dans la bonne humeur</p>
+                <a href="#planning" class="btn btn-primary">Voir le planning</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=600&h=400&fit=crop&auto=format" alt="Entraînements badminton" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Planning des entraînements -->
+    <section class="presentation" id="planning">
+        <div class="container">
+            <div class="section-header">
+                <h2>Planning Hebdomadaire</h2>
+                <p>Découvrez nos créneaux d'entraînement</p>
+            </div>
+
+            <div class="info-blocks">
+                <div class="info-block animate-on-scroll" data-delay="0">
+                    <div class="info-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <h3>Lundi</h3>
+                    <h4><strong>19h00 - 22h00</strong></h4>
+                    <p>Entraînement Libre + Compétition</p>
+                    <p style="font-size: 0.9rem; color: var(--gray);">
+                        Séance ouverte à tous les niveaux. Perfectionnement technique pour les compétiteurs.
+                    </p>
+                </div>
+
+                <div class="info-block animate-on-scroll" data-delay="100">
+                    <div class="info-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <h3>Mercredi</h3>
+                    <h4><strong>18h00 - 21h00</strong></h4>
+                    <p>École de Badminton (Jeunes)</p>
+                    <p style="font-size: 0.9rem; color: var(--gray);">
+                        Formation dédiée aux jeunes de 8 à 16 ans. Apprentissage des bases et initiation à la compétition.
+                    </p>
+                </div>
+
+                <div class="info-block animate-on-scroll" data-delay="200">
+                    <div class="info-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <h3>Vendredi</h3>
+                    <h4><strong>19h00 - 22h00</strong></h4>
+                    <p>Entraînement Dirigé</p>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--gray);">
+                        Séances encadrées par nos entraîneurs. Travail technique et tactique approfondi.
+                    </p>
+                </div>
+
+                <div style="background-color: var(--light-gray); padding: 30px; border-radius: var(--border-radius); border-left: 4px solid var(--primary-color);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 15px;">
+                        <i class="fas fa-calendar-day"></i> Samedi
+                    </h3>
+                    <div style="margin-bottom: 15px;">
+                        <strong>14h00 - 18h00</strong><br>
+                        <span style="color: var(--gray);">Entraînement Libre + Loisir</span>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--gray);">
+                        Après-midi détente et convivialité. Idéal pour les débutants et les familles.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Types d'entraînements -->
+            <div class="section-header">
+                <h2>Types d'Entraînements</h2>
+                <p>Un programme varié pour tous les profils de joueurs</p>
+            </div>
+
+            <div class="info-blocks">
+                <div class="info-block">
+                    <div class="info-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Débutants</h3>
+                    <p>Apprentissage des gestes fondamentaux, des règles du jeu et de la tactique de base. Encadrement personnalisé pour une progression rapide.</p>
+                    <div style="margin-top: 15px;">
+                        <strong>Durée :</strong> 1h30<br>
+                        <strong>Groupe :</strong> 8 personnes max
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <div class="info-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Perfectionnement</h3>
+                    <p>Amélioration de la technique, travail de la condition physique et développement des automatismes. Pour joueurs ayant déjà les bases.</p>
+                    <div style="margin-top: 15px;">
+                        <strong>Durée :</strong> 2h<br>
+                        <strong>Groupe :</strong> 10 personnes max
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <div class="info-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Compétition</h3>
+                    <p>Préparation physique et mentale pour les tournois. Analyse vidéo, tactique avancée et matchs d'entraînement.</p>
+                    <div style="margin-top: 15px;">
+                        <strong>Durée :</strong> 2h30<br>
+                        <strong>Groupe :</strong> 6 personnes max
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nos entraîneurs -->
+            <div style="background-color: var(--light-gray); padding: 60px 40px; border-radius: var(--border-radius); margin: 80px 0;">
+                <h3 style="text-align: center; font-size: 2rem; margin-bottom: 40px; color: var(--primary-color);">Notre Équipe d'Entraîneurs</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                    <div style="text-align: center; background-color: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                        <div style="width: 80px; height: 80px; background-color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <i class="fas fa-user" style="font-size: 2rem; color: var(--white);"></i>
+                        </div>
+                        <h4 style="margin-bottom: 10px;">Jean MARTIN</h4>
+                        <p style="color: var(--gray); margin-bottom: 15px;">Entraîneur Principal</p>
+                        <p style="font-size: 0.9rem; color: var(--gray);">Diplôme d'État, 15 ans d'expérience. Spécialiste du haut niveau.</p>
+                    </div>
+
+                    <div style="text-align: center; background-color: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                        <div style="width: 80px; height: 80px; background-color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <i class="fas fa-user" style="font-size: 2rem; color: var(--white);"></i>
+                        </div>
+                        <h4 style="margin-bottom: 10px;">Sophie DURAND</h4>
+                        <p style="color: var(--gray); margin-bottom: 15px;">Entraîneur Jeunes</p>
+                        <p style="font-size: 0.9rem; color: var(--gray);">BEES 1er degré, spécialisée dans la formation des jeunes talents.</p>
+                    </div>
+
+                    <div style="text-align: center; background-color: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                        <div style="width: 80px; height: 80px; background-color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <i class="fas fa-user" style="font-size: 2rem; color: var(--white);"></i>
+                        </div>
+                        <h4 style="margin-bottom: 10px;">Marc BERNARD</h4>
+                        <p style="color: var(--gray); margin-bottom: 15px;">Entraîneur Loisir</p>
+                        <p style="font-size: 0.9rem; color: var(--gray);">Initiateur fédéral, expert en pédagogie pour débutants.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informations pratiques -->
+            <div>
+                <h3 style="text-align: center; font-size: 2rem; margin-bottom: 40px; color: var(--primary-color);">Informations Pratiques</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div style="padding: 30px; background-color: var(--white); border: 2px solid var(--light-gray); border-radius: var(--border-radius);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">
+                            <i class="fas fa-clipboard-list"></i> Équipement Nécessaire
+                        </h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>Raquette de badminton</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>Chaussures de sport (semelles non marquantes)</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>Tenue de sport</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>Serviette et bouteille d'eau</li>
+                        </ul>
+                        <p style="font-size: 0.9rem; color: var(--gray); margin-top: 15px;">
+                            <em>Prêt de raquettes possible pour les débutants</em>
+                        </p>
+                    </div>
+
+                    <div style="padding: 30px; background-color: var(--white); border: 2px solid var(--light-gray); border-radius: var(--border-radius);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">
+                            <i class="fas fa-euro-sign"></i> Tarifs
+                        </h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 8px;"><strong>Adultes :</strong> 180€/an</li>
+                            <li style="margin-bottom: 8px;"><strong>Jeunes (-18 ans) :</strong> 120€/an</li>
+                            <li style="margin-bottom: 8px;"><strong>Étudiants :</strong> 150€/an</li>
+                            <li style="margin-bottom: 8px;"><strong>Séance découverte :</strong> Gratuite</li>
+                        </ul>
+                        <p style="font-size: 0.9rem; color: var(--gray); margin-top: 15px;">
+                            <em>Possibilité de paiement en 3 fois</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section style="padding: 80px 0; background-color: var(--primary-color); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="margin-bottom: 20px;">Prêt à Nous Rejoindre ?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9;">
+                Venez découvrir nos entraînements lors d'une séance d'essai gratuite !
+            </p>
+            <a href="../index.html#contact" class="btn" style="background-color: white; color: var(--primary-color);">
+                <i class="fas fa-calendar-plus"></i>
+                Réserver une séance d'essai
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Club de Badminton</h4>
+                    <p>Votre club de badminton depuis plus de 20 ans. Rejoignez-nous pour découvrir ce sport passionnant dans une ambiance conviviale.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="entrainements.html">Entraînements</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>123 Avenue du Sport<br>75000 Paris</p>
+                    <p>Tél: 01 23 45 67 89</p>
+                    <p>Email: contact@clubbadminton.fr</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Club de Badminton. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

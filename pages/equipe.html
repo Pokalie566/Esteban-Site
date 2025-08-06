@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Équipe - Club de Badminton</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shuttle-space"></i>
+                <a href="../index.html" style="color: inherit; text-decoration: none;">Club Badminton</a>
+            </div>
+            
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Le Club <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="equipe.html">Notre Équipe</a></li>
+                        <li><a href="histoire.html">Histoire</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Activités <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="entrainements.html">Entraînements</a></li>
+                        <li><a href="competitions.html">Compétitions</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="galerie.html" class="nav-link">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil" data-parallax>
+        <div class="hero-content">
+            <div>
+                <h1 class="typing-effect">Notre Équipe</h1>
+                <p>Découvrez les personnes qui font vivre notre club au quotidien</p>
+                <a href="#equipe" class="btn btn-primary">Découvrir l'équipe</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=600&h=400&fit=crop&auto=format" alt="Équipe du club" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Équipe dirigeante -->
+    <section class="presentation" id="equipe">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bureau Directeur</h2>
+                <p>L'équipe qui pilote le club</p>
+            </div>
+
+            <div class="info-blocks">
+                <div class="info-block animate-on-scroll" data-delay="0">
+                    <div class="info-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Pierre MOREAU</h3>
+                    <h4 style="color: var(--primary-color); font-weight: bold; margin-bottom: 15px;">Président</h4>
+                    <p>Passionné de badminton depuis 25 ans, Pierre dirige le club avec vision et détermination. Il supervise la stratégie générale et les relations externes.</p>
+                </div>
+
+                <div class="info-block animate-on-scroll" data-delay="100">
+                    <div class="info-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Marie LAMBERT</h3>
+                    <h4 style="color: var(--primary-color); font-weight: bold; margin-bottom: 15px;">Vice-Présidente</h4>
+                    <p>Ancienne joueuse de niveau national, Marie apporte son expertise technique et coordonne les activités sportives du club.</p>
+                </div>
+
+                <div class="info-block animate-on-scroll" data-delay="200">
+                    <div class="info-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Paul DUBOIS</h3>
+                    <h4 style="color: var(--primary-color); font-weight: bold; margin-bottom: 15px;">Trésorier</h4>
+                    <p>Expert-comptable de profession, Paul gère avec rigueur les finances du club et assure sa pérennité économique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entraîneurs -->
+    <section class="presentation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Entraîneurs</h2>
+                <p>Une équipe technique expérimentée et passionnée</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <div style="background-color: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center;">
+                    <div style="width: 100px; height: 100px; background-color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                        <i class="fas fa-chalkboard-teacher" style="font-size: 2.5rem; color: var(--white);"></i>
+                    </div>
+                    <h3>Jean MARTIN</h3>
+                    <p style="color: var(--primary-color); font-weight: bold;">Entraîneur Principal</p>
+                    <div style="text-align: left; margin-top: 20px;">
+                        <p><strong>Formation :</strong> Diplôme d'État DEJEPS</p>
+                        <p><strong>Expérience :</strong> 15 ans</p>
+                        <p><strong>Spécialités :</strong> Haut niveau, tactique</p>
+                        <p><strong>Palmarès :</strong> Ancien international junior</p>
+                    </div>
+                </div>
+
+                <div style="background-color: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center;">
+                    <div style="width: 100px; height: 100px; background-color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                        <i class="fas fa-child" style="font-size: 2.5rem; color: var(--white);"></i>
+                    </div>
+                    <h3>Sophie DURAND</h3>
+                    <p style="color: var(--primary-color); font-weight: bold;">Entraîneur Jeunes</p>
+                    <div style="text-align: left; margin-top: 20px;">
+                        <p><strong>Formation :</strong> BEES 1er degré</p>
+                        <p><strong>Expérience :</strong> 10 ans</p>
+                        <p><strong>Spécialités :</strong> Formation jeunes, pédagogie</p>
+                        <p><strong>Palmarès :</strong> Championne régionale vétérans</p>
+                    </div>
+                </div>
+
+                <div style="background-color: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow); text-align: center;">
+                    <div style="width: 100px; height: 100px; background-color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                        <i class="fas fa-heart" style="font-size: 2.5rem; color: var(--white);"></i>
+                    </div>
+                    <h3>Marc BERNARD</h3>
+                    <p style="color: var(--primary-color); font-weight: bold;">Entraîneur Loisir</p>
+                    <div style="text-align: left; margin-top: 20px;">
+                        <p><strong>Formation :</strong> Initiateur fédéral</p>
+                        <p><strong>Expérience :</strong> 8 ans</p>
+                        <p><strong>Spécialités :</strong> Débutants, loisir</p>
+                        <p><strong>Palmarès :</strong> Joueur loisir passionné</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bénévoles -->
+    <section class="presentation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Bénévoles</h2>
+                <p>Les membres dévoués qui font fonctionner le club</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div style="text-align: center; padding: 20px;">
+                    <div style="width: 80px; height: 80px; background-color: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-calendar-alt" style="font-size: 2rem; color: var(--white);"></i>
+                    </div>
+                    <h4>Équipe Organisation</h4>
+                    <p style="color: var(--gray);">Gestion des événements et tournois</p>
+                </div>
+
+                <div style="text-align: center; padding: 20px;">
+                    <div style="width: 80px; height: 80px; background-color: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-tools" style="font-size: 2rem; color: var(--white);"></i>
+                    </div>
+                    <h4>Équipe Technique</h4>
+                    <p style="color: var(--gray);">Maintenance du matériel et des terrains</p>
+                </div>
+
+                <div style="text-align: center; padding: 20px;">
+                    <div style="width: 80px; height: 80px; background-color: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-camera" style="font-size: 2rem; color: var(--white);"></i>
+                    </div>
+                    <h4>Équipe Communication</h4>
+                    <p style="color: var(--gray);">Photos, site web et réseaux sociaux</p>
+                </div>
+
+                <div style="text-align: center; padding: 20px;">
+                    <div style="width: 80px; height: 80px; background-color: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-handshake" style="font-size: 2rem; color: var(--white);"></i>
+                    </div>
+                    <h4>Équipe Accueil</h4>
+                    <p style="color: var(--gray);">Accueil des nouveaux membres</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 40px; background-color: var(--light-gray); border-radius: var(--border-radius);">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;">Envie de Nous Aider ?</h3>
+                <p style="margin-bottom: 25px;">Le club fonctionne grâce à l'engagement de ses bénévoles. Rejoignez-nous pour contribuer à la vie associative !</p>
+                <a href="../index.html#contact" class="btn btn-primary">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    Devenir bénévole
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Club de Badminton</h4>
+                    <p>Votre club de badminton depuis plus de 20 ans. Rejoignez-nous pour découvrir ce sport passionnant dans une ambiance conviviale.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="entrainements.html">Entraînements</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>123 Avenue du Sport<br>75000 Paris</p>
+                    <p>Tél: 01 23 45 67 89</p>
+                    <p>Email: contact@clubbadminton.fr</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Club de Badminton. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
