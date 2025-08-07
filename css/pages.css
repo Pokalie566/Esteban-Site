@@ -1,0 +1,711 @@
+/* ===== STYLES ADDITIONNELS POUR LES NOUVELLES PAGES ===== */
+
+/* Page Header Styles */
+.page-header {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.page-header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.page-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.9) 100%);
+    z-index: 2;
+}
+
+.page-header-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page-header-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: var(--white);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.breadcrumb li {
+    margin: 0 0.5rem;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: '>';
+    margin-left: 0.5rem;
+    opacity: 0.7;
+}
+
+.breadcrumb a {
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.page-title {
+    margin-bottom: 1.5rem;
+}
+
+.page-subtitle {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: var(--font-medium);
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+}
+
+.page-main-title {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: var(--font-bold);
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.page-tagline {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: var(--font-medium);
+    opacity: 0.8;
+    letter-spacing: 0.1em;
+}
+
+.page-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Training Programs Styles */
+.training-overview {
+    padding: 5rem 0;
+    background: var(--gray-50);
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.program-card {
+    background: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-2xl);
+}
+
+.program-card.featured {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.02);
+}
+
+.program-header {
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.program-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+}
+
+.program-level {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: var(--font-semibold);
+}
+
+.program-content {
+    padding: 2rem;
+}
+
+.program-features {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.program-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.program-features i {
+    color: var(--primary-color);
+    margin-right: 0.8rem;
+    width: 16px;
+}
+
+.program-schedule,
+.program-price {
+    background: var(--gray-50);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.program-price {
+    text-align: center;
+}
+
+.program-price .price {
+    font-size: 1.5rem;
+    font-weight: var(--font-bold);
+    color: var(--primary-color);
+}
+
+.program-price .price-note {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    margin-top: 0.5rem;
+}
+
+/* Content Grid Layouts */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.content-grid.reverse {
+    direction: rtl;
+}
+
+.content-grid.reverse > * {
+    direction: ltr;
+}
+
+.content-block {
+    padding: 2rem 0;
+}
+
+.block-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.vision-points,
+.mission-values {
+    margin-top: 2rem;
+}
+
+.point-item,
+.value-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.point-item i {
+    color: var(--primary-color);
+    margin-top: 0.2rem;
+}
+
+.value-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.content-image {
+    position: relative;
+    text-align: center;
+}
+
+.content-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-xl);
+}
+
+.image-decoration {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background: var(--gradient-secondary);
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Method Items & Feature Cards */
+.methods-grid,
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.method-item,
+.feature-card {
+    background: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+}
+
+.method-item:hover,
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-2xl);
+}
+
+.method-image,
+.feature-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.method-image img,
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.method-item:hover .method-image img,
+.feature-card:hover .feature-image img {
+    transform: scale(1.1);
+}
+
+.method-overlay,
+.feature-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(102, 126, 234, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.method-item:hover .method-overlay,
+.feature-card:hover .feature-overlay {
+    opacity: 1;
+}
+
+.method-overlay i,
+.feature-overlay i {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.method-content,
+.feature-content {
+    padding: 2rem;
+}
+
+.method-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.feature-tag {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.feature-list li {
+    padding: 0.3rem 0;
+    color: var(--gray-700);
+}
+
+/* Weekly Schedule Styles */
+.weekly-schedule {
+    padding: 5rem 0;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.schedule-day {
+    background: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+}
+
+.schedule-day:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-xl);
+}
+
+.day-header {
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.day-header h3 {
+    margin-bottom: 0.5rem;
+}
+
+.day-count {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+}
+
+.time-slots {
+    padding: 1.5rem;
+}
+
+.time-slot {
+    padding: 1rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.time-slot:hover {
+    border-color: var(--primary-color);
+    background: var(--gray-50);
+}
+
+.time-slot .time {
+    display: block;
+    font-weight: var(--font-semibold);
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+.time-slot .level {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--gray-700);
+    margin-bottom: 0.2rem;
+}
+
+.time-slot .coach {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--gray-600);
+}
+
+.schedule-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--gray-100);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+.schedule-note i {
+    color: var(--primary-color);
+    margin-top: 0.2rem;
+}
+
+/* Coaches Section */
+.coaches-section {
+    padding: 5rem 0;
+    background: var(--gray-50);
+}
+
+.coaches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.coach-card {
+    background: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+}
+
+.coach-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-2xl);
+}
+
+.coach-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.coach-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.coach-card:hover .coach-image img {
+    transform: scale(1.1);
+}
+
+.coach-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(102, 126, 234, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.coach-card:hover .coach-overlay {
+    opacity: 1;
+}
+
+.coach-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.coach-social a {
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.coach-social a:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.coach-info {
+    padding: 2rem;
+}
+
+.coach-title {
+    color: var(--primary-color);
+    font-weight: var(--font-medium);
+    margin-bottom: 1rem;
+}
+
+.coach-credentials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.credential {
+    background: var(--gray-100);
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    color: var(--gray-700);
+}
+
+.coach-specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.specialty {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+}
+
+/* Statistics Section */
+.statistics-section {
+    padding: 5rem 0;
+    background: var(--gradient-dark);
+    color: var(--white);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: var(--font-bold);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: var(--font-semibold);
+    margin-bottom: 0.5rem;
+}
+
+.stat-description {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-main-title {
+        font-size: 2.5rem;
+    }
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .programs-grid,
+    .schedule-grid,
+    .coaches-grid {
+        grid-template-columns: 1fr;
+    }
+}

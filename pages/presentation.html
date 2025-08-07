@@ -3,173 +3,449 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation - Club de Badminton</title>
+    <meta name="description" content="Découvrez l'histoire et la philosophie de notre club de badminton d'excellence. Plus de 20 ans d'expérience dans la formation et l'accompagnement des joueurs.">
+    <meta name="keywords" content="badminton, club, présentation, histoire, philosophie, sport, excellence">
+    <meta name="author" content="Club de Badminton Excellence">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Présentation - Club Badminton Excellence">
+    <meta property="og:description" content="Découvrez notre club de badminton d'excellence, notre histoire et notre philosophie sportive.">
+    <meta property="og:image" content="https://picsum.photos/1200/630?random=11">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Présentation - Club Badminton Excellence">
+    <meta property="twitter:description" content="Découvrez notre club de badminton d'excellence, notre histoire et notre philosophie sportive.">
+    <meta property="twitter:image" content="https://picsum.photos/1200/630?random=11">
+    
+    <title>Présentation - Club Badminton Excellence | Notre Histoire & Philosophie</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="../css/style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-shuttle-space"></i>
-                <a href="../index.html" style="color: inherit; text-decoration: none;">Club Badminton</a>
+                <i class="fas fa-shuttle-space" aria-hidden="true"></i>
+                <a href="../index.html" style="color: inherit; text-decoration: none;">Club Badminton Excellence</a>
             </div>
             
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <!-- Menu burger pour mobile -->
+            <button class="nav-toggle" id="mobile-menu" aria-label="Menu de navigation mobile" aria-expanded="false">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
             
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link">Accueil</a>
+            <!-- Menu principal -->
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li class="nav-item" role="none">
+                    <a href="../index.html" class="nav-link" role="menuitem">Accueil</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">Le Club <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="presentation.html">Présentation</a></li>
-                        <li><a href="equipe.html">Notre Équipe</a></li>
-                        <li><a href="histoire.html">Histoire</a></li>
+                <li class="nav-item dropdown" role="none">
+                    <a href="#" class="nav-link dropdown-toggle active" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                        Le Club <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="none"><a href="presentation.html" role="menuitem" class="active">Présentation</a></li>
+                        <li role="none"><a href="equipe.html" role="menuitem">Notre Équipe</a></li>
+                        <li role="none"><a href="histoire.html" role="menuitem">Histoire</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">Activités <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="entrainements.html">Entraînements</a></li>
-                        <li><a href="competitions.html">Compétitions</a></li>
-                        <li><a href="stages.html">Stages</a></li>
+                <li class="nav-item dropdown" role="none">
+                    <a href="#" class="nav-link dropdown-toggle" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                        Activités <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="none"><a href="entrainements.html" role="menuitem">Entraînements</a></li>
+                        <li role="none"><a href="competitions.html" role="menuitem">Compétitions</a></li>
+                        <li role="none"><a href="stages.html" role="menuitem">Stages</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="galerie.html" class="nav-link">Galerie</a>
+                <li class="nav-item" role="none">
+                    <a href="galerie.html" class="nav-link" role="menuitem">Galerie</a>
                 </li>
-                <li class="nav-item">
-                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                <li class="nav-item" role="none">
+                    <a href="../index.html#contact" class="nav-link" role="menuitem">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="accueil" data-parallax>
-        <div class="hero-content">
-            <div>
-                <h1 class="typing-effect">Présentation du Club</h1>
-                <p>Découvrez l'histoire et les valeurs de notre club de badminton</p>
-                <a href="#presentation" class="btn btn-primary">En savoir plus</a>
+    <!-- Main content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-header-background">
+                <div class="page-header-overlay"></div>
+                <img src="https://picsum.photos/1200/600?random=12" alt="" class="page-header-bg-image" loading="eager">
             </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop&auto=format" alt="Présentation du club" />
+            <div class="container">
+                <div class="page-header-content">
+                    <nav aria-label="Fil d'Ariane">
+                        <ol class="breadcrumb">
+                            <li><a href="../index.html">Accueil</a></li>
+                            <li><a href="#">Le Club</a></li>
+                            <li aria-current="page">Présentation</li>
+                        </ol>
+                    </nav>
+                    <h1 class="page-title">
+                        <span class="page-subtitle">Découvrez</span>
+                        <span class="page-main-title">Notre Club</span>
+                        <span class="page-tagline">Excellence • Passion • Innovation</span>
+                    </h1>
+                    <p class="page-description">
+                        Plongez dans l'univers de notre club de badminton d'exception, 
+                        où tradition et modernité se conjuguent pour créer une expérience sportive unique.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contenu principal -->
-    <section class="presentation" id="presentation">
-        <div class="container">
-            <div class="section-header">
-                <h2>Notre Club de Badminton</h2>
-                <p>Une communauté passionnée au service du sport</p>
-            </div>
-
-            <div class="info-blocks">
-                <div class="info-block animate-on-scroll" data-delay="0">
-                    <div class="info-icon">
-                        <i class="fas fa-bullseye"></i>
+        <!-- Vision & Mission -->
+        <section class="vision-mission">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-block animate-on-scroll" data-delay="0">
+                        <div class="block-icon">
+                            <i class="fas fa-eye" aria-hidden="true"></i>
+                        </div>
+                        <h2>Notre Vision</h2>
+                        <p>Être le club de référence pour la pratique du badminton, reconnu pour son excellence sportive, sa convivialité et son innovation pédagogique. Nous aspirons à développer le potentiel de chaque joueur dans un environnement stimulant et bienveillant.</p>
+                        <div class="vision-points">
+                            <div class="point-item">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>Excellence sportive de haut niveau</span>
+                            </div>
+                            <div class="point-item">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                                <span>Communauté conviviale et inclusive</span>
+                            </div>
+                            <div class="point-item">
+                                <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                                <span>Innovation dans l'enseignement</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Notre Mission</h3>
-                    <p>Depuis plus de 20 ans, notre club s'engage à promouvoir la pratique du badminton dans un esprit de convivialité et de performance. Nous accueillons tous les joueurs, des débutants aux compétiteurs confirmés.</p>
-                    <p>Notre objectif est de créer un environnement favorable à la progression de chacun, dans le respect des valeurs sportives et de l'esprit d'équipe.</p>
+                    
+                    <div class="content-image animate-on-scroll" data-delay="100">
+                        <img src="https://picsum.photos/600/400?random=13" alt="Vision du club - Entraînement professionnel" loading="lazy">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Statement -->
+        <section class="mission-statement">
+            <div class="container">
+                <div class="content-grid reverse">
+                    <div class="content-image animate-on-scroll" data-delay="0">
+                        <img src="https://picsum.photos/600/400?random=14" alt="Mission du club - Formation des jeunes" loading="lazy">
+                        <div class="image-decoration"></div>
+                    </div>
+                    
+                    <div class="content-block animate-on-scroll" data-delay="100">
+                        <div class="block-icon">
+                            <i class="fas fa-bullseye" aria-hidden="true"></i>
+                        </div>
+                        <h2>Notre Mission</h2>
+                        <p>Accompagner chaque joueur dans sa progression, du premier échange à la compétition de haut niveau. Nous nous engageons à offrir un enseignement de qualité, des installations d'exception et un encadrement professionnel pour révéler le potentiel de chacun.</p>
+                        <div class="mission-values">
+                            <div class="value-item">
+                                <h4>Formation d'Excellence</h4>
+                                <p>Programmes adaptés à tous les niveaux avec un suivi personnalisé</p>
+                            </div>
+                            <div class="value-item">
+                                <h4>Esprit Sportif</h4>
+                                <p>Respect, fair-play et dépassement de soi au cœur de nos valeurs</p>
+                            </div>
+                            <div class="value-item">
+                                <h4>Innovation Constante</h4>
+                                <p>Méthodes d'entraînement modernes et équipements de pointe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Club Features -->
+        <section class="club-features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ce Qui Nous Distingue</h2>
+                    <p>Découvrez les atouts qui font de notre club une référence dans le monde du badminton</p>
                 </div>
                 
-                <div class="info-block animate-on-scroll" data-delay="100">
-                    <div class="info-icon">
-                        <i class="fas fa-image"></i>
+                <div class="features-grid">
+                    <div class="feature-card animate-on-scroll" data-delay="0">
+                        <div class="feature-image">
+                            <img src="https://picsum.photos/400/300?random=15" alt="Entraînement technique" loading="lazy">
+                            <div class="feature-overlay">
+                                <i class="fas fa-dumbbell" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Encadrement Professionnel</h3>
+                            <p>15 entraîneurs diplômés d'État avec une expertise reconnue dans la formation et la compétition. Chaque coach apporte son expérience unique pour vous faire progresser.</p>
+                            <ul class="feature-list">
+                                <li>Entraîneurs BE2 et DE JEPS</li>
+                                <li>Ex-joueurs de haut niveau</li>
+                                <li>Formation continue assurée</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3>Notre Club</h3>
-                    <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=600&h=250&fit=crop&auto=format" alt="Présentation du club" style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--border-radius); box-shadow: var(--shadow-lg); margin-top: 15px;">
+                    
+                    <div class="feature-card animate-on-scroll" data-delay="100">
+                        <div class="feature-image">
+                            <img src="https://picsum.photos/400/300?random=16" alt="Installations modernes" loading="lazy">
+                            <div class="feature-overlay">
+                                <i class="fas fa-building" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Installations d'Exception</h3>
+                            <p>8 terrains homologués FFBaD avec un éclairage LED dernière génération, vestiaires modernes et espaces de convivialité pour une expérience optimale.</p>
+                            <ul class="feature-list">
+                                <li>Sols sportifs certifiés BWF</li>
+                                <li>Système de ventilation optimal</li>
+                                <li>Boutique équipements sur site</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card animate-on-scroll" data-delay="200">
+                        <div class="feature-image">
+                            <img src="https://picsum.photos/400/300?random=17" alt="Compétition de haut niveau" loading="lazy">
+                            <div class="feature-overlay">
+                                <i class="fas fa-trophy" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Excellence Compétitive</h3>
+                            <p>Participation aux championnats régionaux et nationaux avec un palmarès exceptionnel. Nos équipes évoluent du niveau départemental à l'élite française.</p>
+                            <ul class="feature-list">
+                                <li>12 équipes en championnat</li>
+                                <li>Résultats en élite régionale</li>
+                                <li>Détection jeunes talents</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card animate-on-scroll" data-delay="300">
+                        <div class="feature-image">
+                            <img src="https://picsum.photos/400/300?random=18" alt="Formation jeunes" loading="lazy">
+                            <div class="feature-overlay">
+                                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3>École de Badminton</h3>
+                            <p>Programme jeunes labellisé FFBaD avec une pédagogie adaptée pour initier et perfectionner les futurs champions dans un cadre ludique et motivant.</p>
+                            <ul class="feature-list">
+                                <li>Label École Française de Badminton</li>
+                                <li>Stages vacances scolaires</li>
+                                <li>Passerelles vers la compétition</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="info-blocks">
-                <div class="info-block animate-on-scroll" data-delay="200">
-                    <div class="info-icon">
-                        <i class="fas fa-trophy"></i>
+        <!-- Statistics -->
+        <section class="statistics-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card animate-on-scroll" data-delay="0">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Années d'Excellence</span>
+                            <span class="stat-description">D'expérience dans la formation badminton</span>
+                        </div>
                     </div>
-                    <h3>Excellence Sportive</h3>
-                    <p>Notre club participe à de nombreuses compétitions régionales et nationales. Nos équipes se distinguent régulièrement dans les tournois officiels.</p>
-                </div>
-
-                <div class="info-block animate-on-scroll" data-delay="300">
-                    <div class="info-icon">
-                        <i class="fas fa-heart"></i>
+                    
+                    <div class="stat-card animate-on-scroll" data-delay="100">
+                        <div class="stat-icon">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Membres Actifs</span>
+                            <span class="stat-description">De tous âges et tous niveaux</span>
+                        </div>
                     </div>
-                    <h3>Esprit Familial</h3>
-                    <p>Au-delà de la performance, nous cultivons un esprit familial et convivial. Chaque membre fait partie intégrante de notre communauté.</p>
-                </div>
-
-                <div class="info-block animate-on-scroll" data-delay="400">
-                    <div class="info-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                    
+                    <div class="stat-card animate-on-scroll" data-delay="200">
+                        <div class="stat-icon">
+                            <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Entraîneurs Diplômés</span>
+                            <span class="stat-description">Experts certifiés et passionnés</span>
+                        </div>
                     </div>
-                    <h3>Formation</h3>
-                    <p>Nous proposons des programmes d'entraînement adaptés à tous les niveaux, encadrés par des coachs diplômés et expérimentés.</p>
+                    
+                    <div class="stat-card animate-on-scroll" data-delay="300">
+                        <div class="stat-icon">
+                            <i class="fas fa-medal" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Titres Remportés</span>
+                            <span class="stat-description">En championnats régionaux et nationaux</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Statistiques -->
-            <div style="background-color: var(--light-gray); padding: 60px 40px; border-radius: var(--border-radius); margin: 80px 0;">
-                <h3 style="text-align: center; font-size: 2rem; margin-bottom: 40px; color: var(--primary-color);">Le Club en Chiffres</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: center;">
-                    <div>
-                        <div style="font-size: 3rem; font-weight: bold; color: var(--primary-color); margin-bottom: 10px;">150+</div>
-                        <div style="font-size: 1.1rem; color: var(--gray);">Membres actifs</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 3rem; font-weight: bold; color: var(--primary-color); margin-bottom: 10px;">20+</div>
-                        <div style="font-size: 1.1rem; color: var(--gray);">Années d'existence</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 3rem; font-weight: bold; color: var(--primary-color); margin-bottom: 10px;">5</div>
-                        <div style="font-size: 1.1rem; color: var(--gray);">Entraîneurs diplômés</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 3rem; font-weight: bold; color: var(--primary-color); margin-bottom: 10px;">12</div>
-                        <div style="font-size: 1.1rem; color: var(--gray);">Terrains disponibles</div>
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <h2>Prêt à Nous Rejoindre ?</h2>
+                    <p>Découvrez l'excellence du badminton dans notre club et bénéficiez d'un accompagnement personnalisé pour atteindre vos objectifs sportifs.</p>
+                    <div class="cta-buttons">
+                        <a href="../index.html#contact" class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                            Réserver un essai gratuit
+                        </a>
+                        <a href="equipe.html" class="btn btn-secondary btn-large">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            Rencontrer l'équipe
+                        </a>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
 
-            <!-- Nos Valeurs -->
-            <div>
-                <h3 style="text-align: center; font-size: 2rem; margin-bottom: 40px; color: var(--primary-color);">Nos Valeurs</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-                    <div style="padding: 30px; background-color: var(--white); border-left: 4px solid var(--primary-color); box-shadow: var(--shadow);">
-                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">Respect</h4>
-                        <p>Respect de l'adversaire, de l'arbitre, des règles et de l'équipement.</p>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-shuttle-space" aria-hidden="true"></i>
+                        <span>Club Badminton Excellence</span>
                     </div>
-                    <div style="padding: 30px; background-color: var(--white); border-left: 4px solid var(--primary-color); box-shadow: var(--shadow);">
-                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">Progression</h4>
-                        <p>Accompagnement personnalisé pour permettre à chacun de progresser à son rythme.</p>
+                    <p>Depuis plus de 20 ans, nous cultivons l'excellence sportive et humaine. Rejoignez notre communauté passionnée et découvrez le plaisir de jouer au badminton dans un environnement professionnel et convivial.</p>
+                    <div class="footer-certifications">
+                        <div class="cert-item">
+                            <i class="fas fa-award" aria-hidden="true"></i>
+                            <span>Agréé FFBaD</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-medal" aria-hidden="true"></i>
+                            <span>Label Qualité</span>
+                        </div>
                     </div>
-                    <div style="padding: 30px; background-color: var(--white); border-left: 4px solid var(--primary-color); box-shadow: var(--shadow);">
-                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">Convivialité</h4>
-                        <p>Création de liens sociaux forts au sein de notre communauté sportive.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Le Club</h4>
+                    <ul class="footer-links">
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="equipe.html">Notre Équipe</a></li>
+                        <li><a href="histoire.html">Histoire</a></li>
+                        <li><a href="galerie.html">Galerie Photos</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Activités</h4>
+                    <ul class="footer-links">
+                        <li><a href="entrainements.html">Entraînements</a></li>
+                        <li><a href="competitions.html">Compétitions</a></li>
+                        <li><a href="stages.html">Stages</a></li>
+                        <li><a href="#" onclick="alert('Calendrier bientôt disponible')">Calendrier</a></li>
+                        <li><a href="#" onclick="alert('Résultats bientôt disponibles')">Résultats</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>123 Avenue du Sport<br>75000 Paris</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+33123456789">01 23 45 67 89</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:contact@clubbadminton.fr">contact@clubbadminton.fr</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Club Badminton Excellence. Tous droits réservés.</p>
+                    <div class="legal-links">
+                        <a href="#" onclick="alert('Mentions légales bientôt disponibles')">Mentions légales</a>
+                        <a href="#" onclick="alert('Politique de confidentialité bientôt disponible')">Confidentialité</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <span>Suivez-nous :</span>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link twitter" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link youtube" aria-label="YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Club de Badminton</h4>
-                    <p>Votre club de badminton depuis plus de 20 ans. Rejoignez-nous pour découvrir ce sport passionnant dans une ambiance conviviale.</p>
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scroll-to-top" aria-label="Retour en haut" style="display: none;">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
                 </div>
                 
                 <div class="footer-section">

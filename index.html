@@ -3,251 +3,730 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club de Badminton - Accueil</title>
+    <meta name="description" content="Club de Badminton professionnel - Entraînements, compétitions et stages pour tous niveaux. Rejoignez notre communauté passionnée de badminton.">
+    <meta name="keywords" content="badminton, club, sport, entraînement, compétition, stage, raquette, volant">
+    <meta name="author" content="Club de Badminton">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Club de Badminton - Excellence et Passion">
+    <meta property="og:description" content="Découvrez notre club de badminton d'excellence. Entraînements professionnels, compétitions de haut niveau et stages intensifs.">
+    <meta property="og:image" content="https://picsum.photos/1200/630?random=1">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Club de Badminton - Excellence et Passion">
+    <meta property="twitter:description" content="Découvrez notre club de badminton d'excellence. Entraînements professionnels, compétitions de haut niveau et stages intensifs.">
+    <meta property="twitter:image" content="https://picsum.photos/1200/630?random=1">
+    
+    <title>Club de Badminton - Excellence et Passion | Entraînements & Compétitions</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsClub",
+        "name": "Club de Badminton",
+        "sport": "Badminton",
+        "description": "Club de badminton professionnel offrant entraînements, compétitions et stages pour tous niveaux",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Avenue du Sport",
+            "addressLocality": "Paris",
+            "postalCode": "75000",
+            "addressCountry": "FR"
+        },
+        "telephone": "+33123456789",
+        "email": "contact@clubbadminton.fr",
+        "url": "",
+        "openingHours": ["Mo 19:00-22:00", "We 18:00-21:00", "Fr 19:00-22:00", "Sa 14:00-18:00"]
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-shuttle-space"></i>
-                <span>Club Badminton</span>
+                <i class="fas fa-shuttle-space" aria-hidden="true"></i>
+                <span>Club Badminton Excellence</span>
             </div>
             
             <!-- Menu burger pour mobile -->
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="nav-toggle" id="mobile-menu" aria-label="Menu de navigation mobile" aria-expanded="false">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
             
             <!-- Menu principal -->
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#accueil" class="nav-link">Accueil</a>
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li class="nav-item" role="none">
+                    <a href="#accueil" class="nav-link" role="menuitem">Accueil</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">Le Club <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="pages/presentation.html">Présentation</a></li>
-                        <li><a href="pages/equipe.html">Notre Équipe</a></li>
-                        <li><a href="pages/histoire.html">Histoire</a></li>
+                <li class="nav-item dropdown" role="none">
+                    <a href="#" class="nav-link dropdown-toggle" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                        Le Club <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="none"><a href="pages/presentation.html" role="menuitem">Présentation</a></li>
+                        <li role="none"><a href="pages/equipe.html" role="menuitem">Notre Équipe</a></li>
+                        <li role="none"><a href="pages/histoire.html" role="menuitem">Histoire</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">Activités <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="pages/entrainements.html">Entraînements</a></li>
-                        <li><a href="pages/competitions.html">Compétitions</a></li>
-                        <li><a href="pages/stages.html">Stages</a></li>
+                <li class="nav-item dropdown" role="none">
+                    <a href="#" class="nav-link dropdown-toggle" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                        Activités <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="none"><a href="pages/entrainements.html" role="menuitem">Entraînements</a></li>
+                        <li role="none"><a href="pages/competitions.html" role="menuitem">Compétitions</a></li>
+                        <li role="none"><a href="pages/stages.html" role="menuitem">Stages</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="pages/galerie.html" class="nav-link">Galerie</a>
+                <li class="nav-item" role="none">
+                    <a href="pages/galerie.html" class="nav-link" role="menuitem">Galerie</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                <li class="nav-item" role="none">
+                    <a href="#contact" class="nav-link" role="menuitem">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Bannière principale -->
-    <section class="hero" id="accueil" data-parallax>
-        <div class="hero-content">
-            <div>
-                <h1 class="typing-effect">Bienvenue au Club de Badminton</h1>
-                <p>Découvrez la passion du badminton dans une ambiance conviviale et sportive</p>
-                <a href="#presentation" class="btn btn-primary">Découvrir le club</a>
+    <!-- Main content -->
+    <main id="main-content">
+        <!-- Bannière principale -->
+        <section class="hero" id="accueil" role="banner">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+                <img src="https://picsum.photos/800/600?random=2" alt="" class="hero-bg-image" loading="eager">
             </div>
-            <div class="hero-image">
-                <!-- Image de placeholder - à remplacer par une vraie photo -->
-                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop&auto=format" alt="Joueurs de badminton" />
-            </div>
-        </div>
-    </section>
-
-    <!-- Section présentation -->
-    <section class="presentation" id="presentation">
-        <div class="container">
-            <div class="section-header">
-                <h2>Notre Club</h2>
-                <p>Un club dynamique et accueillant pour tous les niveaux</p>
-            </div>
-            
-            <div class="info-blocks">
-                <div class="info-block animate-on-scroll" data-delay="0">
-                    <div class="info-icon">
-                        <i class="fas fa-users"></i>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="hero-subtitle">Bienvenue au</span>
+                        <span class="hero-main-title">Club Badminton Excellence</span>
+                        <span class="hero-tagline">Passion • Performance • Progression</span>
+                    </h1>
+                    <p class="hero-description">
+                        Découvrez l'excellence du badminton dans un environnement professionnel et convivial. 
+                        Que vous soyez débutant ou compétiteur confirmé, notre club vous accompagne vers vos objectifs.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#presentation" class="btn btn-primary btn-hero">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                            Découvrir le club
+                        </a>
+                        <a href="#contact" class="btn btn-secondary btn-hero">
+                            <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                            Essai gratuit
+                        </a>
                     </div>
-                    <h3>Présentation du Club</h3>
-                    <p>Notre club de badminton existe depuis plus de 20 ans et accueille des joueurs de tous niveaux, des débutants aux compétiteurs confirmés. Dans une ambiance conviviale, venez découvrir ou perfectionner votre technique.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Membres actifs</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Entraîneurs certifiés</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-container">
+                        <img src="https://picsum.photos/600/400?random=3" alt="Joueurs de badminton en action lors d'un entraînement" loading="eager" />
+                        <div class="hero-image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span>Découvrir</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+        </section>
+
+        <!-- Section présentation -->
+        <section class="presentation" id="presentation">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Excellence & Innovation</h2>
+                    <p>Un club de badminton d'exception qui allie tradition, performance et modernité pour offrir la meilleure expérience sportive</p>
                 </div>
                 
-                <div class="info-block animate-on-scroll" data-delay="100">
-                    <div class="info-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Horaires d'Entraînement</h3>
-                    <p><strong>Lundi :</strong> 19h - 22h<br>
-                       <strong>Mercredi :</strong> 18h - 21h<br>
-                       <strong>Vendredi :</strong> 19h - 22h<br>
-                       <strong>Samedi :</strong> 14h - 18h</p>
-                </div>
-                
-                <div class="info-block animate-on-scroll" data-delay="200">
-                    <div class="info-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Lieu des Entraînements</h3>
-                    <p>Gymnase Municipal<br>
-                       123 Avenue du Sport<br>
-                       75000 Paris<br>
-                       <em>Parking gratuit disponible</em></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Galerie d'images -->
-    <section class="gallery" id="galerie">
-        <div class="container">
-            <div class="section-header">
-                <h2>Galerie Photos</h2>
-                <p>Découvrez la vie de notre club en images</p>
-            </div>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item animate-on-scroll" data-delay="0">
-                    <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=400&h=300&fit=crop&auto=format" alt="Entraînement" />
-                    <div class="gallery-overlay">
-                        <h4>Entraînements</h4>
-                    </div>
-                </div>
-                <div class="gallery-item animate-on-scroll" data-delay="100">
-                    <img src="https://images.unsplash.com/photo-1552667466-07770ae110d0?w=400&h=300&fit=crop&auto=format" alt="Compétition" />
-                    <div class="gallery-overlay">
-                        <h4>Compétitions</h4>
-                    </div>
-                </div>
-                <div class="gallery-item animate-on-scroll" data-delay="200">
-                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&auto=format" alt="Équipe" />
-                    <div class="gallery-overlay">
-                        <h4>Notre Équipe</h4>
-                    </div>
-                </div>
-                <div class="gallery-item animate-on-scroll" data-delay="300">
-                    <img src="https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?w=400&h=300&fit=crop&auto=format" alt="Tournoi" />
-                    <div class="gallery-overlay">
-                        <h4>Tournois</h4>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center">
-                <a href="pages/galerie.html" class="btn btn-secondary">Voir toutes les photos</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Formulaire de contact -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contactez-Nous</h2>
-                <p>Une question ? N'hésitez pas à nous contacter</p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info animate-on-scroll" data-delay="0">
-                    <h3>Informations de Contact</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>contact@clubbadminton.fr</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>01 23 45 67 89</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Avenue du Sport, 75000 Paris</span>
-                    </div>
-                    
-                    <div class="social-links">
-                        <h4>Suivez-nous</h4>
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <div class="presentation-content">
+                    <div class="presentation-main">
+                        <div class="presentation-text">
+                            <h3>Notre Philosophie</h3>
+                            <p>Depuis plus de 20 ans, notre club incarne l'excellence dans l'apprentissage et la pratique du badminton. Nous croyons que chaque joueur, quel que soit son niveau, mérite un accompagnement personnalisé et professionnel pour atteindre ses objectifs.</p>
+                            
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-trophy" aria-hidden="true"></i>
+                                    </div>
+                                    <h4>Excellence Sportive</h4>
+                                    <p>Programmes d'entraînement de haute qualité adaptés à tous les niveaux</p>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-users" aria-hidden="true"></i>
+                                    </div>
+                                    <h4>Esprit d'Équipe</h4>
+                                    <p>Une communauté soudée où convivialité et performance se conjuguent</p>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                                    </div>
+                                    <h4>Formation Continue</h4>
+                                    <p>Entraîneurs diplômés et méthodes pédagogiques innovantes</p>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-medal" aria-hidden="true"></i>
+                                    </div>
+                                    <h4>Compétition</h4>
+                                    <p>Participation aux championnats régionaux et nationaux</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="presentation-image">
+                            <img src="https://picsum.photos/400/300?random=4" alt="Entraînement au club de badminton" loading="lazy">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span>Découvrir en vidéo</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <form class="contact-form animate-on-scroll" id="contact-form" data-delay="100">
-                    <div class="form-group">
-                        <label for="name">Nom complet *</label>
-                        <input type="text" id="name" name="name" required>
+                <div class="info-blocks">
+                    <div class="info-block animate-on-scroll" data-delay="0">
+                        <div class="info-icon">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <h3>Horaires d'Entraînement</h3>
+                        <div class="schedule-list">
+                            <div class="schedule-item">
+                                <span class="day">Lundi</span>
+                                <span class="time">19h00 - 22h00</span>
+                                <span class="level">Tous niveaux</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="day">Mercredi</span>
+                                <span class="time">18h00 - 21h00</span>
+                                <span class="level">Perfectionnement</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="day">Vendredi</span>
+                                <span class="time">19h00 - 22h00</span>
+                                <span class="level">Compétition</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="day">Samedi</span>
+                                <span class="time">14h00 - 18h00</span>
+                                <span class="level">Jeunes & Loisir</span>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="info-block animate-on-scroll" data-delay="100">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Installations d'Exception</h3>
+                        <div class="facilities-list">
+                            <div class="facility-item">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>8 terrains homologués FFBaD</span>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Vestiaires avec douches</span>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Parking gratuit (50 places)</span>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Espace restauration</span>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Boutique équipements</span>
+                            </div>
+                        </div>
+                        <div class="location-info">
+                            <strong>Gymnase Municipal d'Excellence</strong><br>
+                            123 Avenue du Sport<br>
+                            75000 Paris<br>
+                            <a href="#" class="location-link">
+                                <i class="fas fa-route" aria-hidden="true"></i>
+                                Voir l'itinéraire
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <input type="text" id="subject" name="subject">
+                    <div class="info-block animate-on-scroll" data-delay="200">
+                        <div class="info-icon">
+                            <i class="fas fa-euro-sign" aria-hidden="true"></i>
+                        </div>
+                        <h3>Tarifs & Adhésions</h3>
+                        <div class="pricing-list">
+                            <div class="price-item">
+                                <span class="price-type">Adulte Loisir</span>
+                                <span class="price-amount">180€/an</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-type">Adulte Compétition</span>
+                                <span class="price-amount">250€/an</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-type">Jeune (-18 ans)</span>
+                                <span class="price-amount">120€/an</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-type">Famille (3+ membres)</span>
+                                <span class="price-amount">-20%</span>
+                            </div>
+                        </div>
+                        <div class="pricing-note">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>
+                            <span>Première séance d'essai gratuite</span>
+                        </div>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i>
-                        Envoyer le message
-                    </button>
-                </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Galerie d'images -->
+        <section class="gallery" id="galerie">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Galerie d'Excellence</h2>
+                    <p>Plongez dans l'univers de notre club à travers des moments d'émotion, de performance et de convivialité</p>
+                </div>
+                
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Tout voir</button>
+                    <button class="filter-btn" data-filter="training">Entraînements</button>
+                    <button class="filter-btn" data-filter="competition">Compétitions</button>
+                    <button class="filter-btn" data-filter="events">Événements</button>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item animate-on-scroll" data-delay="0" data-category="training">
+                        <img src="https://picsum.photos/400/300?random=5" alt="Séance d'entraînement technique" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>Entraînement Technique</h4>
+                                <p>Perfectionnement des gestes fondamentaux</p>
+                                <div class="overlay-actions">
+                                    <button class="btn-zoom" aria-label="Agrandir l'image">
+                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                    </button>
+                                    <a href="pages/entrainements.html" class="btn-link" aria-label="En savoir plus">
+                                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item animate-on-scroll" data-delay="100" data-category="competition">
+                        <img src="https://picsum.photos/400/300?random=6" alt="Match de compétition" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>Championnats Régionaux</h4>
+                                <p>Nos joueurs en compétition officielle</p>
+                                <div class="overlay-actions">
+                                    <button class="btn-zoom" aria-label="Agrandir l'image">
+                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                    </button>
+                                    <a href="pages/competitions.html" class="btn-link" aria-label="En savoir plus">
+                                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item animate-on-scroll" data-delay="200" data-category="events">
+                        <img src="https://picsum.photos/400/300?random=7" alt="Événement club" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>Tournoi Interne</h4>
+                                <p>Convivialité et performance réunies</p>
+                                <div class="overlay-actions">
+                                    <button class="btn-zoom" aria-label="Agrandir l'image">
+                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                    </button>
+                                    <a href="pages/galerie.html" class="btn-link" aria-label="En savoir plus">
+                                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item animate-on-scroll" data-delay="300" data-category="training">
+                        <img src="https://picsum.photos/400/300?random=8" alt="Entraînement jeunes" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>École de Badminton</h4>
+                                <p>Formation des jeunes talents</p>
+                                <div class="overlay-actions">
+                                    <button class="btn-zoom" aria-label="Agrandir l'image">
+                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                    </button>
+                                    <a href="pages/stages.html" class="btn-link" aria-label="En savoir plus">
+                                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item animate-on-scroll" data-delay="400" data-category="competition">
+                        <img src="https://picsum.photos/400/300?random=9" alt="Remise de prix" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>Remise des Trophées</h4>
+                                <p>Récompenser l'excellence sportive</p>
+                                <div class="overlay-actions">
+                                    <button class="btn-zoom" aria-label="Agrandir l'image">
+                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                    </button>
+                                    <a href="pages/competitions.html" class="btn-link" aria-label="En savoir plus">
+                                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item animate-on-scroll" data-delay="500" data-category="events">
+                        <img src="https://picsum.photos/400/300?random=10" alt="Soirée du club" loading="lazy" />
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>Soirée du Club</h4>
+                                <p>Moments de partage et de convivialité</p>
+                                <div class="overlay-actions">
+                                    <button class="btn-zoom" aria-label="Agrandir l'image">
+                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                    </button>
+                                    <a href="pages/galerie.html" class="btn-link" aria-label="En savoir plus">
+                                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="pages/galerie.html" class="btn btn-secondary btn-large">
+                        <i class="fas fa-images" aria-hidden="true"></i>
+                        Découvrir toute la galerie
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulaire de contact -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nous Contacter</h2>
+                    <p>Prêt à rejoindre notre communauté ? Contactez-nous pour plus d'informations ou pour réserver votre séance d'essai gratuite</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info animate-on-scroll" data-delay="0">
+                        <div class="contact-card">
+                            <h3>Informations de Contact</h3>
+                            
+                            <div class="contact-methods">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <strong>Email</strong>
+                                        <a href="mailto:contact@clubbadminton.fr">contact@clubbadminton.fr</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <strong>Téléphone</strong>
+                                        <a href="tel:+33123456789">01 23 45 67 89</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <strong>Adresse</strong>
+                                        <span>123 Avenue du Sport<br>75000 Paris</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-clock" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <strong>Horaires d'accueil</strong>
+                                        <span>Lun-Ven: 18h-22h<br>Sam: 14h-18h</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-section">
+                                <h4>Suivez-nous</h4>
+                                <div class="social-links">
+                                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="social-link twitter" aria-label="Twitter">
+                                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="social-link youtube" aria-label="YouTube">
+                                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form animate-on-scroll" id="contact-form" data-delay="100" novalidate>
+                        <h3>Envoyez-nous un message</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required autocomplete="name">
+                                <div class="form-error" id="name-error"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Adresse email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required autocomplete="email">
+                                <div class="form-error" id="email-error"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" autocomplete="tel">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Choisir un sujet</option>
+                                    <option value="inscription">Inscription / Renseignements</option>
+                                    <option value="essai">Séance d'essai gratuite</option>
+                                    <option value="competition">Compétition</option>
+                                    <option value="stage">Stages et formations</option>
+                                    <option value="autre">Autre demande</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Votre message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre demande, votre niveau de jeu, vos objectifs..."></textarea>
+                            <div class="form-error" id="message-error"></div>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">
+                                J'accepte que mes données soient utilisées pour me recontacter concernant ma demande <span class="required">*</span>
+                            </label>
+                            <div class="form-error" id="consent-error"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                Envoyer le message
+                            </span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                                Envoi en cours...
+                            </span>
+                        </button>
+                        
+                        <div class="form-message" id="form-message" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Club de Badminton</h4>
-                    <p>Votre club de badminton depuis plus de 20 ans. Rejoignez-nous pour découvrir ce sport passionnant dans une ambiance conviviale.</p>
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-shuttle-space" aria-hidden="true"></i>
+                        <span>Club Badminton Excellence</span>
+                    </div>
+                    <p>Depuis plus de 20 ans, nous cultivons l'excellence sportive et humaine. Rejoignez notre communauté passionnée et découvrez le plaisir de jouer au badminton dans un environnement professionnel et convivial.</p>
+                    <div class="footer-certifications">
+                        <div class="cert-item">
+                            <i class="fas fa-award" aria-hidden="true"></i>
+                            <span>Agréé FFBaD</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-medal" aria-hidden="true"></i>
+                            <span>Label Qualité</span>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Liens Rapides</h4>
-                    <ul>
+                    <h4>Le Club</h4>
+                    <ul class="footer-links">
                         <li><a href="pages/presentation.html">Présentation</a></li>
-                        <li><a href="pages/entrainements.html">Entraînements</a></li>
-                        <li><a href="pages/galerie.html">Galerie</a></li>
+                        <li><a href="pages/equipe.html">Notre Équipe</a></li>
+                        <li><a href="pages/histoire.html">Histoire</a></li>
+                        <li><a href="pages/galerie.html">Galerie Photos</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>123 Avenue du Sport<br>75000 Paris</p>
-                    <p>Tél: 01 23 45 67 89</p>
-                    <p>Email: contact@clubbadminton.fr</p>
+                    <h4>Activités</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/entrainements.html">Entraînements</a></li>
+                        <li><a href="pages/competitions.html">Compétitions</a></li>
+                        <li><a href="pages/stages.html">Stages</a></li>
+                        <li><a href="#" onclick="alert('Calendrier bientôt disponible')">Calendrier</a></li>
+                        <li><a href="#" onclick="alert('Résultats bientôt disponibles')">Résultats</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Informations Pratiques</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>123 Avenue du Sport<br>75000 Paris</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+33123456789">01 23 45 67 89</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:contact@clubbadminton.fr">contact@clubbadminton.fr</a>
+                        </div>
+                    </div>
+                    
+                    <div class="newsletter">
+                        <h5>Newsletter</h5>
+                        <form class="newsletter-form" id="newsletter-form">
+                            <input type="email" placeholder="Votre email" required>
+                            <button type="submit" aria-label="S'abonner à la newsletter">
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Club de Badminton. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <p>&copy; 2025 Club Badminton Excellence. Tous droits réservés.</p>
+                    <div class="legal-links">
+                        <a href="#" onclick="alert('Mentions légales bientôt disponibles')">Mentions légales</a>
+                        <a href="#" onclick="alert('Politique de confidentialité bientôt disponible')">Confidentialité</a>
+                        <a href="#" onclick="alert('CGV bientôt disponibles')">CGV</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <span>Suivez-nous :</span>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link twitter" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link youtube" aria-label="YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scroll-to-top" aria-label="Retour en haut" style="display: none;">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Loading overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Chargement...</p>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
